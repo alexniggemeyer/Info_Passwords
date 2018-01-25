@@ -1,0 +1,15 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Passwords\root.v4p" scrollx="0" scrolly="2520">
+   <BOUNDS type="Window" left="-20865" top="1545" width="15735" height="11820">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="datareadout" filename="subpatch\datareadout.v4p" nodename="subpatch\datareadout.v4p" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="915" top="7663" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="-1572" top="443" width="4975" height="14440">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="4975" height="14440">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
