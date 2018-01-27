@@ -1,15 +1,141 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Passwords\root.v4p" scrollx="0" scrolly="2520">
-   <BOUNDS type="Window" left="-20865" top="1545" width="15735" height="11820">
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\root.v4p" scrollx="60" scrolly="495">
+   <BOUNDS type="Window" left="10110" top="2130" width="15735" height="11820">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="datareadout" filename="subpatch\datareadout.v4p" nodename="subpatch\datareadout.v4p" componentmode="InAWindow" id="27">
-   <BOUNDS type="Node" left="420" top="3073" width="0" height="0">
+   <NODE systemname="common_password" filename="subpatch\common_password.v4p" nodename="subpatch\common_password.v4p" componentmode="InAWindow" id="28">
+   <BOUNDS type="Node" left="975" top="1695" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="0" width="4975" height="14440">
+   <BOUNDS type="Box" left="555" top="0" width="4975" height="14440">
    </BOUNDS>
-   <BOUNDS type="Window" left="-20280" top="2535" width="9450" height="14430">
+   <BOUNDS type="Window" left="0" top="735" width="12960" height="14430">
+   </BOUNDS>
+   <PIN pinname="rank" visible="1">
+   </PIN>
+   <PIN pinname="password" visible="1">
+   </PIN>
+   <PIN pinname="category" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="master_password" filename="subpatch\master_password.v4p" nodename="subpatch\master_password.v4p" componentmode="InAWindow" id="29">
+   <BOUNDS type="Node" left="5880" top="1665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="rank" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="735" width="12960" height="14430">
    </BOUNDS>
    </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="960" top="3915" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="rank" dstnodeid="35" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="1980" top="3885" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="2940" top="3930" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Bin Size" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="password" dstnodeid="36" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="category" dstnodeid="37" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
+   <BOUNDS type="Box" left="3570" top="1710" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3570" top="1710" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Index">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="39">
+   <BOUNDS type="Node" left="615" top="6930" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="615" top="6930" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2010" top="7575" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="780" top="6045" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="780" top="6045" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Layer" dstnodeid="39" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="945" top="5445" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse" visible="1" slicecount="1" values="Space">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="41" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="41" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="41" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="40" dstpinname="String">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.3">
+   </PACK>
    </PATCH>
