@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\root.v4p" scrollx="60" scrolly="495">
-   <BOUNDS type="Window" left="10110" top="2130" width="15735" height="11820">
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\root.v4p" scrollx="45" scrolly="4515">
+   <BOUNDS type="Window" left="14505" top="765" width="14100" height="11820">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="common_password" filename="subpatch\common_password.v4p" nodename="subpatch\common_password.v4p" componentmode="InAWindow" id="28">
-   <BOUNDS type="Node" left="975" top="1695" width="0" height="0">
+   <NODE systemname="common_password" filename="subpatch\common_password.v4p" nodename="subpatch\common_password.v4p" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="465" top="6465" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="555" top="0" width="4975" height="14440">
+   <BOUNDS type="Box" left="45" top="4770" width="4975" height="14440">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="735" width="12960" height="14430">
+   <BOUNDS type="Window" left="14610" top="2835" width="12960" height="14430">
    </BOUNDS>
    <PIN pinname="rank" visible="1">
    </PIN>
@@ -18,16 +18,16 @@
    <PIN pinname="category" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="master_password" filename="subpatch\master_password.v4p" nodename="subpatch\master_password.v4p" componentmode="InAWindow" id="29">
-   <BOUNDS type="Node" left="5880" top="1665" width="100" height="100">
+   <NODE systemname="master_password" filename="subpatch\master_password.v4p" nodename="subpatch\master_password.v4p" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="11445" top="1815" width="100" height="100">
    </BOUNDS>
    <PIN pinname="rank" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="0" top="735" width="12960" height="14430">
+   <BOUNDS type="Window" left="14610" top="2835" width="12960" height="14430">
    </BOUNDS>
    </NODE>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="35">
-   <BOUNDS type="Node" left="960" top="3915" width="100" height="100">
+   <BOUNDS type="Node" left="690" top="11850" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="text">
    </PIN>
@@ -41,7 +41,7 @@
    <LINK srcnodeid="28" srcpinname="rank" dstnodeid="35" dstpinname="Input">
    </LINK>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="36">
-   <BOUNDS type="Node" left="1980" top="3885" width="100" height="100">
+   <BOUNDS type="Node" left="1710" top="11820" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="text">
    </PIN>
@@ -53,7 +53,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="2940" top="3930" width="100" height="100">
+   <BOUNDS type="Node" left="2670" top="11865" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="text">
    </PIN>
@@ -69,9 +69,9 @@
    <LINK srcnodeid="28" srcpinname="category" dstnodeid="37" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
-   <BOUNDS type="Box" left="3570" top="1710" width="795" height="240">
+   <BOUNDS type="Box" left="3300" top="9645" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3570" top="1710" width="0" height="0">
+   <BOUNDS type="Node" left="3300" top="9645" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -91,29 +91,31 @@
    <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Index">
    </LINK>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="39">
-   <BOUNDS type="Node" left="615" top="6930" width="100" height="100">
+   <BOUNDS type="Node" left="855" top="15180" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="615" top="6930" width="6000" height="4500">
+   <BOUNDS type="Box" left="855" top="15180" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="2010" top="7575" width="6240" height="5085">
+   <BOUNDS type="Window" left="6015" top="6975" width="6240" height="5085">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="780" top="6045" width="100" height="100">
+   <BOUNDS type="Node" left="1020" top="14295" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="780" top="6045" width="3000" height="3000">
+   <BOUNDS type="Box" left="1020" top="14295" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="String" visible="1">
    </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="Layer" dstnodeid="39" dstpinname="Layers">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="41">
-   <BOUNDS type="Node" left="945" top="5445" width="100" height="100">
+   <BOUNDS type="Node" left="1200" top="13020" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -138,4 +140,84 @@
    </LINK>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="42">
+   <BOUNDS type="Node" left="3570" top="1290" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3570" top="1290" width="2895" height="5700">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="10" values="|password related|,|easy alphanumeric|,animal,sport,name,|cool / macho|,food,|nerdy / pop cultural|,fluffy,|rebellious / rude|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="3375" top="8760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filter" visible="1" slicecount="10" values="|password related|,|easy alphanumeric|,animal,sport,name,|cool / macho|,food,|nerdy / pop cultural|,fluffy,|rebellious / rude|">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="514" values="|password related|,|easy alphanumeric|,|easy alphanumeric|,|easy alphanumeric|,|easy alphanumeric|,|easy alphanumeric|,animal,sport,sport,|password related|,animal,|easy alphanumeric|,|easy alphanumeric|,|cool / macho|,name,|cool / macho|,|cool / macho|,name,|easy alphanumeric|,|easy alphanumeric|,name,name,|cool / macho|,|easy alphanumeric|,|cool / macho|,|rebellious / rude|,|cool / macho|,|cool / macho|,name,name,name,sport,name,|password related|,|password related|,|cool / macho|,sport,name,name,name,name,fluffy,fluffy,name,|easy alphanumeric|,food,name,|password related|,|easy alphanumeric|,|easy alphanumeric|,name,name,|nerdy / pop cultural|,|cool / macho|,name,sport,sport,|easy alphanumeric|,name,|easy alphanumeric|,|easy alphanumeric|,name,fluffy,|rebellious / rude|,|rebellious / rude|,|nerdy / pop cultural|,|cool / macho|,|cool / macho|,name,name,name,|cool / macho|,fluffy,|cool / macho|,name,name,|easy alphanumeric|,|nerdy / pop cultural|,name,|easy alphanumeric|,sport,food,fluffy,name,name,name,name,|cool / macho|,fluffy,|cool / macho|,|rebellious / rude|,|easy alphanumeric|,|cool / macho|,|cool / macho|,|cool / macho|,name,|cool / macho|,animal,fluffy,name,|nerdy / pop cultural|,|nerdy / pop cultural|,fluffy,|cool / macho|,|cool / macho|,|easy alphanumeric|,name,animal,|cool / macho|,name,|cool / macho|,fluffy,|cool / macho|,fluffy,name,|easy alphanumeric|,|cool / macho|,name,|fluffy |,|cool / macho|,name,name,name,|rebellious / rude|,name,name,|password related|,sport,sport,sport,food,|cool / macho|,|easy alphanumeric|,|password related|,name,|cool / macho|,|cool / macho|,|cool / macho|,name,|nerdy / pop cultural|,food,random,name,|cool / macho|,|easy alphanumeric|,|password related|,name,|cool / macho|,|nerdy / pop cultural|,|nerdy / pop cultural|,|cool / macho|,name,|cool / macho|,|password related|,name,name,sport,food,|cool / macho|,|cool / macho|,sport,|cool / macho|,animal,|password related|,|cool / macho|,name,name,|cool / macho|,name,|cool / macho|,|nerdy / pop cultural|,name,sport,animal,|cool / macho|,sport,sport,|nerdy / pop cultural|,|cool / macho|,name,name,sport,|rebellious / rude|,|cool / macho|,|rebellious / rude|,name,|cool / macho|,|cool / macho|,fluffy,|cool / macho|,|easy alphanumeric|,name,|cool / macho|,|easy alphanumeric|,name,|rebellious / rude|,sport,|nerdy / pop cultural|,|easy alphanumeric|,|cool / macho|,animal,|easy alphanumeric|,sport,name,|easy alphanumeric|,fluffy,name,|easy alphanumeric|,name,fluffy,name,|cool / macho|,fluffy,fluffy,|nerdy / pop cultural|,|cool / macho|,name,fluffy,name,name,fluffy,fluffy,name,|cool / macho|,name,name,name,name,|nerdy / pop cultural|,|cool / macho|,|cool / macho|,fluffy,food,|rebellious / rude|,name,sport,name,|cool / macho|,name,|cool / macho|,name,sport,fluffy,fluffy,fluffy,name,food,animal,name,name,sport,|cool / macho|,name,|cool / macho|,name,name,sport,sport,sport,name,name,name,|easy alphanumeric|,name,fluffy,|cool / macho|,sport,name,|cool / macho|,|cool / macho|,|password related|,fluffy,fluffy,name,|easy alphanumeric|,animal,sport,|easy alphanumeric|,|easy alphanumeric|,animal,name,name,fluffy,food,fluffy,fluffy,|easy alphanumeric|,|easy alphanumeric|,name,name,name,name,|easy alphanumeric|,name,|nerdy / pop cultural|,random,|cool / macho|,|cool / macho|,|cool / macho|,|rebellious / rude|,|cool / macho|,|cool / macho|,fluffy,food,food,|easy alphanumeric|,fluffy,|cool / macho|,animal,fluffy,|cool / macho|,|easy alphanumeric|,name,name,sport,|easy alphanumeric|,|easy alphanumeric|,food,name,animal,|password related|,|cool / macho|,|password related|,name,|cool / macho|,|easy alphanumeric|,name,name,|cool / macho|,|cool / macho|,|password related|,name,|nerdy / pop cultural|,|nerdy / pop cultural|,name,name,|nerdy / pop cultural|,|cool / macho|,food,fluffy,name,fluffy,name,name,|easy alphanumeric|,|cool / macho|,name,name,|rebellious / rude|,fluffy,|cool / macho|,sport,|easy alphanumeric|,|easy alphanumeric|,name,name,|cool / macho|,|rebellious / rude|,|cool / macho|,|nerdy / pop cultural|,sport,|cool / macho|,name,|cool / macho|,|cool / macho|,|easy alphanumeric|,name,|nerdy / pop cultural|,|easy alphanumeric|,fluffy,|cool / macho|,animal,|easy alphanumeric|,|cool / macho|,|easy alphanumeric|,name,fluffy,|password related|,|nerdy / pop cultural|,name,name,|nerdy / pop cultural|,|cool / macho|,name,|cool / macho|,fluffy,name,|cool / macho|,name,|cool / macho|,name,|cool / macho|,name,name,name,random,|cool / macho|,name,|nerdy / pop cultural|,fluffy,fluffy,name,name,|easy alphanumeric|,fluffy,|cool / macho|,sport,|cool / macho|,name,name,|easy alphanumeric|,name,name,|password related|,|easy alphanumeric|,|cool / macho|,fluffy,|cool / macho|,|rebellious / rude|,|cool / macho|,|cool / macho|,|easy alphanumeric|,|nerdy / pop cultural|,random,animal,name,|cool / macho|,|cool / macho|,|easy alphanumeric|,name,|easy alphanumeric|,|cool / macho|,|cool / macho|,|cool / macho|,name,fluffy,name,|cool / macho|,fluffy,name,|cool / macho|,|password related|,name,name,sport,name,name,sport,name,|easy alphanumeric|,|rebellious / rude|,sport,fluffy,name,|cool / macho|,|easy alphanumeric|,|password related|,animal,|nerdy / pop cultural|,|nerdy / pop cultural|,|easy alphanumeric|,name,|nerdy / pop cultural|,|cool / macho|,|easy alphanumeric|,|cool / macho|,animal,fluffy,animal,|nerdy / pop cultural|,name,name,|cool / macho|,|cool / macho|,|easy alphanumeric|,|cool / macho|,name,food,fluffy,|easy alphanumeric|,|cool / macho|,|rebellious / rude|,name,|nerdy / pop cultural|,fluffy,|cool / macho|,|cool / macho|,|cool / macho|,name,fluffy,name,|easy alphanumeric|,name,|cool / macho|,fluffy,|cool / macho|,|cool / macho|,|cool / macho|,name,random,|cool / macho|,|password related|,name,name,name,|nerdy / pop cultural|,|easy alphanumeric|,|rebellious / rude|,name,|easy alphanumeric|,|cool / macho|,|easy alphanumeric|,name,name">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   <PIN pinname="Case Sensitive" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="3585" top="7845" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Output String" dstnodeid="46" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="category" dstnodeid="44" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Input Index" dstnodeid="38" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="3435" top="12855" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="1.77">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="3105" top="13380" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="TranslateY" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Output" dstnodeid="48" dstpinname="TranslateY">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Transform Out" dstnodeid="40" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="49">
+   <BOUNDS type="Node" left="4590" top="10785" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Input Index" dstnodeid="49" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Count" dstnodeid="47" dstpinname="Spread Count">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="44" dstpinname="Filter">
+   </LINK>
    </PATCH>
