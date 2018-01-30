@@ -188,7 +188,7 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="5" dstpinname="ScaleY">
    </LINK>
-   <BOUNDS type="Window" left="9855" top="1020" width="13500" height="13755">
+   <BOUNDS type="Window" left="2850" top="1590" width="13500" height="13755">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -208,6 +208,8 @@
    <PIN pinname="String" visible="1">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="22.82">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Roboto Mono|">
    </PIN>
    </NODE>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="20">
@@ -332,38 +334,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="58">
-   <BOUNDS type="Box" left="9015" top="3915" width="1560" height="330">
-   </BOUNDS>
-   <BOUNDS type="Node" left="9015" top="3915" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="58" dstpinname="Input String">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="59">
-   <BOUNDS type="Box" left="10995" top="3885" width="1620" height="390">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10995" top="3885" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="51" srcpinname="category" dstnodeid="59" dstpinname="Input String">
-   </LINK>
    <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="83">
    <BOUNDS type="Node" left="780" top="12300" width="100" height="100">
    </BOUNDS>
