@@ -53,6 +53,8 @@
    </PIN>
    <PIN pinname="Horizontal Align" slicecount="1" visible="1" values="Left">
    </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Roboto Mono|">
+   </PIN>
    </NODE>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
