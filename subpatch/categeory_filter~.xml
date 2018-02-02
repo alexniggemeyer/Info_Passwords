@@ -1,0 +1,391 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" systemname="categeory_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" scrollx="0" scrolly="8280">
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="771" top="7450" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Select" visible="1" slicecount="10" values="1,1,1,1,1,1,1,1,1,1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ToggleButton (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll" nodename="ToggleButton (GUI)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="3831" top="5695" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3831" top="5695" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="Internal Value" slicecount="10" values="0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Hit" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|0.20000,0.20000,0.20000,1.00000|">
+   </PIN>
+   <PIN pinname="Active" visible="1">
+   </PIN>
+   <PIN pinname="Value Output" visible="1">
+   </PIN>
+   <PIN pinname="Activated Color" slicecount="10" visible="1" values="|0.92941,0.29804,0.29804,1.00000|,|0.96863,0.57647,0.11765,1.00000|,|0.97647,0.94118,0.27451,1.00000|,|0.29412,0.97647,0.43922,1.00000|,|0.22745,0.56863,0.39216,1.00000|,|0.40000,0.40000,0.80000,1.00000|,|0.61961,0.08627,0.93725,1.00000|,|1.00000,0.20000,1.00000,1.00000|,|0.00000,1.00000,1.00000,1.00000|,|0.54118,1.00000,0.82353,1.00000|">
+   </PIN>
+   <PIN pinname="SizeXY" slicecount="2" values="0.95,0.95">
+   </PIN>
+   <PIN pinname="Set Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="4281" top="2095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Spread Count" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.97">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="3846" top="4090" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="ScaleX" visible="1">
+   </PIN>
+   <PIN pinname="ScaleY" visible="1">
+   </PIN>
+   <PIN pinname="TranslateY" slicecount="1" visible="1" values="-0.83">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="3381" top="10510" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3381" top="10510" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4701" top="2545" width="810" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4701" top="2545" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.31">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4821" top="2905" width="810" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4821" top="2905" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.08">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="4596" top="10510" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4596" top="10510" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="String" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="22.82">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Roboto Mono|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="5061" top="9160" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1" slicecount="10" values="-0.756,-0.588,-0.42,-0.252,-0.084,0.0840000000000001,0.252,0.42,0.588,0.756">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="catgeroy_color" filename="catgeroy_color.v4p" nodename="catgeroy_color.v4p" componentmode="InAWindow" id="10">
+   <BOUNDS type="Node" left="750" top="345" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="4665" height="9765">
+   </BOUNDS>
+   <BOUNDS type="Window" left="19185" top="2535" width="4665" height="9765">
+   </BOUNDS>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="category" visible="1">
+   </PIN>
+   <PIN pinname="color" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="4101" top="11905" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4101" top="11905" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="category" dstnodeid="0" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Value Output" dstnodeid="0" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="4" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Color" dstnodeid="4" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="11" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="11" dstpinname="Layer 2">
+   </LINK>
+   <NODE id="16" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <BOUNDS type="Box" left="4671" top="11225" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4671" top="11225" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Enabled">
+   </LINK>
+   <NODE id="17" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Out|">
+   </PIN>
+   <BOUNDS type="Box" left="4200" top="12820" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4200" top="12820" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Layer Out" dstnodeid="17" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform In">
+   </LINK>
+   <NODE id="19" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
+   </PIN>
+   <BOUNDS type="Box" left="5421" top="4610" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5421" top="4610" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="1" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="color" dstnodeid="1" dstpinname="Activated Color">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="TranslateY">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="3" dstpinname="ScaleX">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="3" dstpinname="ScaleY">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="category" dstnodeid="7" dstpinname="String">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Transform Out" dstnodeid="7" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="8" dstpinname="TranslateY">
+   </LINK>
+   <BOUNDS type="Window" left="8070" top="705" width="8430" height="14895">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.3">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="3660" top="615" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3660" top="615" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output Node" dstnodeid="3" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output Node" dstnodeid="8" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="630" top="14655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filter" visible="1" slicecount="10" values="|password related|,|easy alphanumeric|,animal,sport,name,|cool / macho|,food,|nerdy / pop cultural|,fluffy,|rebellious / rude|">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="514" values="|password related|,|easy alphanumeric|,|easy alphanumeric|,|easy alphanumeric|,|easy alphanumeric|,|easy alphanumeric|,animal,sport,sport,|password related|,animal,|easy alphanumeric|,|easy alphanumeric|,|cool / macho|,name,|cool / macho|,|cool / macho|,name,|easy alphanumeric|,|easy alphanumeric|,name,name,|cool / macho|,|easy alphanumeric|,|cool / macho|,|rebellious / rude|,|cool / macho|,|cool / macho|,name,name,name,sport,name,|password related|,|password related|,|cool / macho|,sport,name,name,name,name,fluffy,fluffy,name,|easy alphanumeric|,food,name,|password related|,|easy alphanumeric|,|easy alphanumeric|,name,name,|nerdy / pop cultural|,|cool / macho|,name,sport,sport,|easy alphanumeric|,name,|easy alphanumeric|,|easy alphanumeric|,name,fluffy,|rebellious / rude|,|rebellious / rude|,|nerdy / pop cultural|,|cool / macho|,|cool / macho|,name,name,name,|cool / macho|,fluffy,|cool / macho|,name,name,|easy alphanumeric|,|nerdy / pop cultural|,name,|easy alphanumeric|,sport,food,fluffy,name,name,name,name,|cool / macho|,fluffy,|cool / macho|,|rebellious / rude|,|easy alphanumeric|,|cool / macho|,|cool / macho|,|cool / macho|,name,|cool / macho|,animal,fluffy,name,|nerdy / pop cultural|,|nerdy / pop cultural|,fluffy,|cool / macho|,|cool / macho|,|easy alphanumeric|,name,animal,|cool / macho|,name,|cool / macho|,fluffy,|cool / macho|,fluffy,name,|easy alphanumeric|,|cool / macho|,name,|fluffy |,|cool / macho|,name,name,name,|rebellious / rude|,name,name,|password related|,sport,sport,sport,food,|cool / macho|,|easy alphanumeric|,|password related|,name,|cool / macho|,|cool / macho|,|cool / macho|,name,|nerdy / pop cultural|,food,random,name,|cool / macho|,|easy alphanumeric|,|password related|,name,|cool / macho|,|nerdy / pop cultural|,|nerdy / pop cultural|,|cool / macho|,name,|cool / macho|,|password related|,name,name,sport,food,|cool / macho|,|cool / macho|,sport,|cool / macho|,animal,|password related|,|cool / macho|,name,name,|cool / macho|,name,|cool / macho|,|nerdy / pop cultural|,name,sport,animal,|cool / macho|,sport,sport,|nerdy / pop cultural|,|cool / macho|,name,name,sport,|rebellious / rude|,|cool / macho|,|rebellious / rude|,name,|cool / macho|,|cool / macho|,fluffy,|cool / macho|,|easy alphanumeric|,name,|cool / macho|,|easy alphanumeric|,name,|rebellious / rude|,sport,|nerdy / pop cultural|,|easy alphanumeric|,|cool / macho|,animal,|easy alphanumeric|,sport,name,|easy alphanumeric|,fluffy,name,|easy alphanumeric|,name,fluffy,name,|cool / macho|,fluffy,fluffy,|nerdy / pop cultural|,|cool / macho|,name,fluffy,name,name,fluffy,fluffy,name,|cool / macho|,name,name,name,name,|nerdy / pop cultural|,|cool / macho|,|cool / macho|,fluffy,food,|rebellious / rude|,name,sport,name,|cool / macho|,name,|cool / macho|,name,sport,fluffy,fluffy,fluffy,name,food,animal,name,name,sport,|cool / macho|,name,|cool / macho|,name,name,sport,sport,sport,name,name,name,|easy alphanumeric|,name,fluffy,|cool / macho|,sport,name,|cool / macho|,|cool / macho|,|password related|,fluffy,fluffy,name,|easy alphanumeric|,animal,sport,|easy alphanumeric|,|easy alphanumeric|,animal,name,name,fluffy,food,fluffy,fluffy,|easy alphanumeric|,|easy alphanumeric|,name,name,name,name,|easy alphanumeric|,name,|nerdy / pop cultural|,random,|cool / macho|,|cool / macho|,|cool / macho|,|rebellious / rude|,|cool / macho|,|cool / macho|,fluffy,food,food,|easy alphanumeric|,fluffy,|cool / macho|,animal,fluffy,|cool / macho|,|easy alphanumeric|,name,name,sport,|easy alphanumeric|,|easy alphanumeric|,food,name,animal,|password related|,|cool / macho|,|password related|,name,|cool / macho|,|easy alphanumeric|,name,name,|cool / macho|,|cool / macho|,|password related|,name,|nerdy / pop cultural|,|nerdy / pop cultural|,name,name,|nerdy / pop cultural|,|cool / macho|,food,fluffy,name,fluffy,name,name,|easy alphanumeric|,|cool / macho|,name,name,|rebellious / rude|,fluffy,|cool / macho|,sport,|easy alphanumeric|,|easy alphanumeric|,name,name,|cool / macho|,|rebellious / rude|,|cool / macho|,|nerdy / pop cultural|,sport,|cool / macho|,name,|cool / macho|,|cool / macho|,|easy alphanumeric|,name,|nerdy / pop cultural|,|easy alphanumeric|,fluffy,|cool / macho|,animal,|easy alphanumeric|,|cool / macho|,|easy alphanumeric|,name,fluffy,|password related|,|nerdy / pop cultural|,name,name,|nerdy / pop cultural|,|cool / macho|,name,|cool / macho|,fluffy,name,|cool / macho|,name,|cool / macho|,name,|cool / macho|,name,name,name,random,|cool / macho|,name,|nerdy / pop cultural|,fluffy,fluffy,name,name,|easy alphanumeric|,fluffy,|cool / macho|,sport,|cool / macho|,name,name,|easy alphanumeric|,name,name,|password related|,|easy alphanumeric|,|cool / macho|,fluffy,|cool / macho|,|rebellious / rude|,|cool / macho|,|cool / macho|,|easy alphanumeric|,|nerdy / pop cultural|,random,animal,name,|cool / macho|,|cool / macho|,|easy alphanumeric|,name,|easy alphanumeric|,|cool / macho|,|cool / macho|,|cool / macho|,name,fluffy,name,|cool / macho|,fluffy,name,|cool / macho|,|password related|,name,name,sport,name,name,sport,name,|easy alphanumeric|,|rebellious / rude|,sport,fluffy,name,|cool / macho|,|easy alphanumeric|,|password related|,animal,|nerdy / pop cultural|,|nerdy / pop cultural|,|easy alphanumeric|,name,|nerdy / pop cultural|,|cool / macho|,|easy alphanumeric|,|cool / macho|,animal,fluffy,animal,|nerdy / pop cultural|,name,name,|cool / macho|,|cool / macho|,|easy alphanumeric|,|cool / macho|,name,food,fluffy,|easy alphanumeric|,|cool / macho|,|rebellious / rude|,name,|nerdy / pop cultural|,fluffy,|cool / macho|,|cool / macho|,|cool / macho|,name,fluffy,name,|easy alphanumeric|,name,|cool / macho|,fluffy,|cool / macho|,|cool / macho|,|cool / macho|,name,random,|cool / macho|,|password related|,name,name,name,|nerdy / pop cultural|,|easy alphanumeric|,|rebellious / rude|,name,|easy alphanumeric|,|cool / macho|,|easy alphanumeric|,name,name">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   <PIN pinname="Case Sensitive" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
+   <PIN pinname="Comparison" visible="1" slicecount="1" values="MatchesAny">
+   </PIN>
+   <PIN pinname="Found At Position" visible="1">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="27" systemname="RGB (Color Join)" nodename="RGB (Color Join)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="1185" top="17685" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Blue" slicecount="1" pintype="Input" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Green" slicecount="1" pintype="Input" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Red" slicecount="1" pintype="Input" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Alpha" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="690" top="18195" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="26" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="630" top="15300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Hits" dstnodeid="25" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="26" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="24">
+   <BOUNDS type="Node" left="1980" top="18150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="24" dstpinname="Switch">
+   <LINKPOINT x="1500" y="16605">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="2265" top="14685" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Filter" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Comparison" slicecount="1" values="MatchesAny">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Color)" nodename="GetSlice (Color)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="1995" top="15300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Filter Index" dstnodeid="22" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="24" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="color" dstnodeid="22" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="category" dstnodeid="23" dstpinname="Filter">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="28" dstpinname="Filter">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="29">
+   <BOUNDS type="Box" left="495" top="11655" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="495" top="11655" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Output String" dstnodeid="23" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output String" dstnodeid="28" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S (Color)" nodename="S (Color)" componentmode="Hidden" id="30">
+   <BOUNDS type="Node" left="2295" top="19095" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="|Color Quad|">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Color)" nodename="S (Color)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="675" top="19140" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="|Color Text|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="31" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="30" dstpinname="Input Value">
+   </LINK>
+   </PATCH>
