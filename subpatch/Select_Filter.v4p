@@ -127,7 +127,7 @@
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="2" values="Category,Stength">
+   <PIN pinname="Input String" slicecount="2" values="Category,Ranking">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -298,7 +298,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output 1" dstnodeid="10" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="19755" top="2310" width="6555" height="13290">
+   <BOUNDS type="Window" left="3510" top="1380" width="6555" height="13290">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>

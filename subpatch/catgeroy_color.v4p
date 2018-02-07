@@ -144,7 +144,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="0" dstpinname="Filename">
    </LINK>
-   <BOUNDS type="Window" left="19185" top="2535" width="4830" height="9285">
+   <BOUNDS type="Window" left="19185" top="2535" width="4665" height="9765">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -188,6 +188,8 @@
    <BOUNDS type="Node" left="2460" top="255" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="readout">
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="0" dstpinname="Read">
