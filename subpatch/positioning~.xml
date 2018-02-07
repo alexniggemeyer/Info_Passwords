@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\positioning.v4p" scrollx="0" scrolly="5040" locked="0">
-   <BOUNDS type="Window" left="15405" top="765" width="12270" height="15390">
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\positioning.v4p" scrollx="0" scrolly="7920" locked="0">
+   <BOUNDS type="Window" left="14295" top="0" width="14610" height="15705">
    </BOUNDS>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="44">
    <BOUNDS type="Node" left="2715" top="1950" width="100" height="100">
@@ -407,9 +407,9 @@
    <LINK srcnodeid="116" srcpinname="Y Output Value" dstnodeid="82" dstpinname="Enabled">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="119">
-   <BOUNDS type="Box" left="4170" top="20085" width="1035" height="240">
+   <BOUNDS type="Box" left="4170" top="20685" width="1035" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4170" top="20085" width="0" height="0">
+   <BOUNDS type="Node" left="4170" top="20685" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
    </PIN>
@@ -732,8 +732,6 @@
    </NODE>
    <LINK srcnodeid="141" srcpinname="Output" dstnodeid="176" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="119" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="187">
    <BOUNDS type="Node" left="4545" top="17760" width="100" height="100">
    </BOUNDS>
@@ -771,5 +769,7 @@
    <LINK srcnodeid="189" srcpinname="Output" dstnodeid="166" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="96" srcpinname="Output 1" dstnodeid="189" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="119" dstpinname="Input Node">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" systemname="categeory_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" scrollx="0" scrolly="6930">
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" systemname="categeory_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" scrollx="0" scrolly="5460">
    <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="771" top="7450" width="100" height="100">
    </BOUNDS>
@@ -109,7 +109,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="String" visible="1">
+   <PIN pinname="String" visible="1" slicecount="10" values="password-related,simple-alphanumeric,animal,sport,name,cool-macho,food,nerdy-pop,fluffy,rebellious-rude">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="22.82">
    </PIN>
@@ -208,13 +208,11 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="3" dstpinname="ScaleY">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="category" dstnodeid="7" dstpinname="String">
-   </LINK>
    <LINK srcnodeid="8" srcpinname="Transform Out" dstnodeid="7" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="8" dstpinname="TranslateY">
    </LINK>
-   <BOUNDS type="Window" left="3495" top="315" width="9285" height="14895">
+   <BOUNDS type="Window" left="16815" top="375" width="8430" height="14895">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -321,11 +319,13 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="text">
    </PIN>
-   <PIN pinname="Filter" visible="1" slicecount="1" values="text">
+   <PIN pinname="Filter" visible="1" slicecount="10" values="password-related,simple-alphanumeric,animal,sport,name,cool-macho,food,nerdy-pop,fluffy,rebellious-rude">
    </PIN>
    <PIN pinname="Comparison" slicecount="1" values="MatchesAny">
    </PIN>
    <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Color)" nodename="GetSlice (Color)" componentmode="Hidden" id="22">
@@ -344,14 +344,12 @@
    </LINK>
    <LINK srcnodeid="10" srcpinname="color" dstnodeid="22" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="10" srcpinname="category" dstnodeid="23" dstpinname="Filter">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="Output" dstnodeid="28" dstpinname="Filter">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="29">
-   <BOUNDS type="Box" left="495" top="11655" width="795" height="240">
+   <BOUNDS type="Box" left="2250" top="13200" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="495" top="11655" width="0" height="0">
+   <BOUNDS type="Node" left="2250" top="13200" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="text">
    </PIN>
@@ -363,7 +361,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input - Output String|">
    </PIN>
    </NODE>
    <LINK srcnodeid="29" srcpinname="Output String" dstnodeid="23" dstpinname="Input">
@@ -371,7 +369,7 @@
    <LINK srcnodeid="29" srcpinname="Output String" dstnodeid="28" dstpinname="Input">
    </LINK>
    <NODE systemname="S (Color)" nodename="S (Color)" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="1980" top="18780" width="100" height="100">
+   <BOUNDS type="Node" left="3690" top="17280" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -379,7 +377,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Color)" nodename="S (Color)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="690" top="18780" width="100" height="100">
+   <BOUNDS type="Node" left="705" top="18945" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -387,8 +385,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="31" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="24" srcpinname="Output" dstnodeid="30" dstpinname="Input Value">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="32">
    <BOUNDS type="Node" left="5400" top="1440" width="100" height="100">
@@ -403,9 +399,9 @@
    <LINK srcnodeid="32" srcpinname="Down Edge" dstnodeid="1" dstpinname="Set Value">
    </LINK>
    <NODE systemname="Occurrence (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\Occurrence.dll" nodename="Occurrence (Value)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="2865" top="15870" width="100" height="100">
+   <BOUNDS type="Node" left="4395" top="16005" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2865" top="15870" width="3000" height="3000">
+   <BOUNDS type="Box" left="4395" top="16005" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -413,7 +409,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Sort (Spreads)" nodename="Sort (Spreads)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="2850" top="15315" width="100" height="100">
+   <BOUNDS type="Node" left="4380" top="15450" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -425,7 +421,7 @@
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="33" dstpinname="Input">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="36">
-   <BOUNDS type="Node" left="2880" top="16380" width="100" height="100">
+   <BOUNDS type="Node" left="4410" top="16515" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="Counts">
    </PIN>
@@ -514,4 +510,42 @@
    </NODE>
    <LINK srcnodeid="43" srcpinname="Output" dstnodeid="44" dstpinname="Input Value">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="46">
+   <BOUNDS type="Box" left="6135" top="16695" width="735" height="2520">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6135" top="16695" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Count" dstnodeid="46" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="category" dstnodeid="7" dstpinname="String">
+   </LINK>
+   <NODE systemname="Select (Color)" nodename="Select (Color)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="3690" top="16515" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Count" dstnodeid="53" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="color" dstnodeid="53" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="30" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="R (String)" nodename="R (String)" componentmode="Hidden" id="54">
+   <BOUNDS type="Node" left="4395" top="13965" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>
