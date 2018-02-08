@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\positioning.v4p" scrollx="0" scrolly="7170" locked="0">
-   <BOUNDS type="Window" left="14190" top="1560" width="14610" height="14040">
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\positioning.v4p" scrollx="0" scrolly="-360" locked="0">
+   <BOUNDS type="Window" left="0" top="0" width="10776" height="13224">
    </BOUNDS>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="44">
    <BOUNDS type="Node" left="2715" top="1950" width="100" height="100">
@@ -421,7 +421,7 @@
    </BOUNDS>
    <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="15">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="11">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -521,7 +521,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="930" top="2130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,0">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-0.55,-0.07">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -630,34 +630,12 @@
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="grid" filename="subpatch\grid.v4p" nodename="subpatch\grid.v4p" componentmode="Hidden" id="167">
-   <BOUNDS type="Node" left="6240" top="1020" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="525" top="270" width="12570" height="12960">
-   </BOUNDS>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="XY" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Index" visible="1" slicecount="10" values="15,61,29,37,183,79,11,30,44,11">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Position - XY" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="168">
    <BOUNDS type="Box" left="8265" top="2265" width="795" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="8265" top="2265" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.17,0.29">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.2,0.2">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -682,12 +660,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Index">
    </PIN>
    </NODE>
-   <LINK srcnodeid="170" srcpinname="Y Output Value" dstnodeid="167" dstpinname="Index">
-   </LINK>
-   <LINK srcnodeid="167" srcpinname="XY" dstnodeid="168" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="167" srcpinname="Position - XY" dstnodeid="139" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="171">
    <BOUNDS type="Node" left="5310" top="16560" width="100" height="100">
    </BOUNDS>
@@ -765,7 +737,5 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="141" srcpinname="Output" dstnodeid="191" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="167" srcpinname="Output" dstnodeid="120" dstpinname="Input 1">
    </LINK>
    </PATCH>

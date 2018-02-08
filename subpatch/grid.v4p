@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\grid.v4p" systemname="grid" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\grid.v4p" scrollx="0" scrolly="720">
-   <BOUNDS type="Window" left="525" top="270" width="12570" height="12960">
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\grid.v4p" systemname="grid" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\grid.v4p" scrollx="264" scrolly="360">
+   <BOUNDS type="Window" left="0" top="0" width="10776" height="13224">
    </BOUNDS>
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3870" top="8640" width="100" height="100">
@@ -47,7 +47,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" values="-0.55,0,0.01,-0.25,-0.4,0.29,-0.4,-0.36,0.17,0.65">
+   <PIN pinname="Y Input Value" slicecount="10" values="-0.55,0.01,0.01,-0.25,-0.39,0.29,-0.39,-0.35,0.19,0.65">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="2" dstpinname="TranslateX">
@@ -63,7 +63,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" values="-0.07,0.42,0.21,-0.07,0.14,0.3,0.37,-0.4,-0.25,-0.03">
+   <PIN pinname="Y Input Value" slicecount="10" values="-0.06,0.41,0.21,-0.07,0.14,0.3,0.36,-0.4,-0.25,-0.03">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="2" dstpinname="TranslateY">
@@ -79,7 +79,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" visible="1" values="0.2,0.22,0.25,0.36,0.49,0.26,0.47,0.53,0.42,0.43">
+   <PIN pinname="Y Input Value" slicecount="10" visible="1" values="0.22,0.27,0.27,0.36,0.52,0.28,0.52,0.53,0.48,0.43">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|ScaleX - X|">
    </PIN>
@@ -95,7 +95,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" visible="1" values="0.2,0.17,0.21,0.22,0.15,0.37,0.25,0.4,0.69,1.08">
+   <PIN pinname="Y Input Value" slicecount="10" visible="1" values="0.23,0.17,0.22,0.25,0.15,0.39,0.27,0.4,0.69,1.05">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ScaleY">
    </PIN>
@@ -198,28 +198,6 @@
    <PIN pinname="Y Input Value" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
-   <BOUNDS type="Box" left="4875" top="7845" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4875" top="7845" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
-   </LINK>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="26">
    <BOUNDS type="Node" left="1290" top="9615" width="100" height="100">
    </BOUNDS>
@@ -363,5 +341,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="36" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="5760" top="7776" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="showgrid">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Input Value" dstnodeid="0" dstpinname="Enabled">
    </LINK>
    </PATCH>

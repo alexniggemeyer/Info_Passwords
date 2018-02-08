@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\root.v4p" scrollx="0" scrolly="4320">
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\root.v4p" scrollx="0" scrolly="6480">
    <BOUNDS type="Window" left="0" top="405" width="12510" height="14850">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -36,7 +36,7 @@
    <PIN pinname="PositionXY" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="filters" filename="subpatch\filters.v4p" nodename="subpatch\filters.v4p" componentmode="Hidden" id="133">
+   <NODE systemname="filters" filename="subpatch\filters.v4p" nodename="subpatch\filters.v4p" componentmode="InAWindow" id="133">
    <BOUNDS type="Node" left="4825" top="14408" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3210" top="7526" width="7930" height="13765">
@@ -195,7 +195,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="0.08,0.02">
+   <PIN pinname="Y Input Value" slicecount="2" values="0.06,0.02">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="2">
    </PIN>
@@ -211,7 +211,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="195" top="16965" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="12465" top="450" width="16005" height="9240">
+   <BOUNDS type="Window" left="5076" top="588" width="15996" height="9240">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -257,9 +257,9 @@
    <LINK srcnodeid="359" srcpinname="Up Edge" dstnodeid="358" dstpinname="Up">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="360">
-   <BOUNDS type="Box" left="5955" top="6105" width="795" height="240">
+   <BOUNDS type="Box" left="6135" top="6153" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5955" top="6105" width="0" height="0">
+   <BOUNDS type="Node" left="6135" top="6153" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -527,7 +527,7 @@
    <LINK srcnodeid="303" srcpinname="Output" dstnodeid="427" dstpinname="Transform">
    </LINK>
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="428">
-   <BOUNDS type="Node" left="2790" top="13725" width="100" height="100">
+   <BOUNDS type="Node" left="2874" top="13665" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="|color ranking|">
    </PIN>
