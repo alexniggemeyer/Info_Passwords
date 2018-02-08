@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\root.v4p" scrollx="0" scrolly="4680">
-   <BOUNDS type="Window" left="0" top="405" width="12510" height="14850">
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\root.v4p" scrollx="0" scrolly="-204">
+   <BOUNDS type="Window" left="-264" top="0" width="9984" height="13224">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -25,7 +25,7 @@
    </PIN>
    <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 6" visible="1">
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="103">
@@ -38,7 +38,7 @@
    <PIN pinname="PositionXY" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="filters" filename="subpatch\filters.v4p" nodename="subpatch\filters.v4p" componentmode="InAWindow" id="133">
+   <NODE systemname="filters" filename="subpatch\filters.v4p" nodename="subpatch\filters.v4p" componentmode="Hidden" id="133">
    <BOUNDS type="Node" left="4825" top="14408" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3210" top="7526" width="7930" height="13765">
@@ -91,7 +91,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="10">
+   <PIN pinname="Input 2" slicecount="1" values="60">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -136,7 +136,7 @@
    <PIN pinname="Send String" slicecount="1" values="readout">
    </PIN>
    </NODE>
-   <NODE systemname="positioning" filename="subpatch\positioning.v4p" nodename="subpatch\positioning.v4p" componentmode="InAWindow" id="303" stayontop="1">
+   <NODE systemname="positioning" filename="subpatch\positioning.v4p" nodename="subpatch\positioning.v4p" componentmode="Hidden" id="303" stayontop="1">
    <BOUNDS type="Node" left="2160" top="9810" width="2205" height="270">
    </BOUNDS>
    <BOUNDS type="Window" left="14190" top="1560" width="14610" height="14040">
@@ -208,22 +208,6 @@
    </NODE>
    <LINK srcnodeid="315" srcpinname="Y Output Value" dstnodeid="303" dstpinname="Size - XY">
    </LINK>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="334">
-   <BOUNDS type="Node" left="195" top="16965" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="195" top="16965" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="8724" top="0" width="15996" height="9240">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Background Color" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
-   </PIN>
-   </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="356">
    <BOUNDS type="Node" left="5595" top="4080" width="100" height="100">
    </BOUNDS>
@@ -496,8 +480,6 @@
    </NODE>
    <LINK srcnodeid="97" srcpinname="Layer Out" dstnodeid="419" dstpinname="Layer In">
    </LINK>
-   <LINK srcnodeid="419" srcpinname="Layer Out" dstnodeid="334" dstpinname="Layers">
-   </LINK>
    <LINK srcnodeid="103" srcpinname="PositionXY" dstnodeid="418" dstpinname="XY">
    </LINK>
    <NODE systemname="sorted_by_category" filename="sorted_by_category.v4p" nodename="sorted_by_category.v4p" componentmode="Hidden" id="420">
@@ -561,6 +543,8 @@
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="grid">
+   </PIN>
    </NODE>
    <LINK srcnodeid="433" srcpinname="Input Value" dstnodeid="97" dstpinname="Layer 6">
    </LINK>
@@ -577,7 +561,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8112" top="12252" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -587,9 +571,21 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="435" srcpinname="Y Output Value" dstnodeid="434" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="436">
+   <BOUNDS type="Node" left="696" top="17604" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="696" top="17604" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8328" top="1020" width="12804" height="8844">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="419" srcpinname="Layer Out" dstnodeid="436" dstpinname="Layers">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\positioning.v4p" scrollx="0" scrolly="-360" locked="0">
-   <BOUNDS type="Window" left="0" top="0" width="10776" height="13224">
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\positioning.v4p" scrollx="2688" scrolly="0" locked="0">
+   <BOUNDS type="Window" left="14190" top="1560" width="14610" height="14040">
    </BOUNDS>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="44">
    <BOUNDS type="Node" left="2715" top="1950" width="100" height="100">
@@ -521,7 +521,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="930" top="2130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-0.55,-0.07">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-0.56,-0.03">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -534,8 +534,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Position -  XY|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="139" srcpinname="Y Output Value" dstnodeid="138" dstpinname="XY">
-   </LINK>
    <NODE systemname="Store (Transform)" filename="%VVVV%\addonpack\lib\nodes\plugins\Store.dll" nodename="Store (Transform)" componentmode="Hidden" id="141">
    <BOUNDS type="Node" left="4170" top="17115" width="100" height="100">
    </BOUNDS>
@@ -651,9 +649,9 @@
    <LINK srcnodeid="168" srcpinname="Y Output Value" dstnodeid="132" dstpinname="Input">
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="170">
-   <BOUNDS type="Node" left="6795" top="555" width="100" height="100">
+   <BOUNDS type="Node" left="6723" top="399" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6795" top="555" width="795" height="240">
+   <BOUNDS type="Box" left="6723" top="399" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -737,5 +735,27 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="141" srcpinname="Output" dstnodeid="191" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="grid" filename="grid.v4p" nodename="grid.v4p" componentmode="InAWindow" id="192">
+   <BOUNDS type="Node" left="5052" top="1116" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6432" top="732" width="10776" height="13224">
+   </BOUNDS>
+   <PIN pinname="Position - XY" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="192" srcpinname="Position - XY" dstnodeid="138" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="XY" dstnodeid="168" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="170" srcpinname="Y Output Value" dstnodeid="192" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Output" dstnodeid="120" dstpinname="Input 1">
    </LINK>
    </PATCH>

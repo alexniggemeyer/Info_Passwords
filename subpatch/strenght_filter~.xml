@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\strenght_filter.v4p" systemname="strenght_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\strenght_filter.v4p" scrollx="0" scrolly="4416">
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\strenght_filter.v4p" systemname="strenght_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\strenght_filter.v4p" scrollx="0" scrolly="1332">
    <NODE id="0" systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Enabled" slicecount="1" pintype="Input" visible="1" values="1">
    </PIN>
@@ -801,7 +801,7 @@
    <LINK srcnodeid="57" srcpinname="Output" dstnodeid="74" dstpinname="Input 2">
    </LINK>
    <NODE systemname="AvoidNIL (Color)" filename="%VVVV%\lib\nodes\modules\Color\AvoidNIL (Color).v4p" nodename="AvoidNIL (Color)" componentmode="Hidden" id="75">
-   <BOUNDS type="Node" left="7800" top="9900" width="100" height="100">
+   <BOUNDS type="Node" left="7800" top="9948" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
