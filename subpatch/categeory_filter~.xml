@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" systemname="categeory_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" scrollx="450" scrolly="0">
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\categeory_filter.v4p" systemname="categeory_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" scrollx="456" scrolly="2520">
    <NODE systemname="ToggleButton (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll" nodename="ToggleButton (GUI)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="9036" top="7045" width="100" height="100">
    </BOUNDS>
@@ -35,7 +35,9 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" values="10">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="0.97">
+   <PIN pinname="Width" slicecount="1" values="0.8">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="-0.08">
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="3">
@@ -73,7 +75,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9906" top="3895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.31">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.32">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -85,7 +87,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10026" top="4255" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.08">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.07">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -109,6 +111,8 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="8">
    <BOUNDS type="Node" left="10476" top="8890" width="100" height="100">
@@ -125,7 +129,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3990" top="285" width="4665" height="9765">
    </BOUNDS>
-   <BOUNDS type="Window" left="19185" top="2535" width="4665" height="9765">
+   <BOUNDS type="Window" left="0" top="0" width="12636" height="13224">
    </BOUNDS>
    <PIN pinname="Read" visible="1" slicecount="1" values="0">
    </PIN>
@@ -196,7 +200,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="8" dstpinname="TranslateY">
    </LINK>
-   <BOUNDS type="Window" left="13935" top="1590" width="14865" height="14895">
+   <BOUNDS type="Window" left="14085" top="3210" width="14865" height="14895">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -232,26 +236,6 @@
    <PIN pinname="Input Index" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="29">
-   <BOUNDS type="Box" left="705" top="2340" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="705" top="2340" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="text">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="text">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Input - Output String|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="29" srcpinname="Output String" dstnodeid="23" dstpinname="Input">
-   </LINK>
    <NODE systemname="S (Color)" nodename="S (Color)" componentmode="Hidden" id="30">
    <BOUNDS type="Node" left="780" top="6240" width="100" height="100">
    </BOUNDS>
@@ -445,5 +429,29 @@
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="3" dstpinname="ScaleX">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Color" dstnodeid="4" dstpinname="Color">
+   </LINK>
+   <NODE systemname="R (String)" nodename="R (String)" componentmode="Hidden" id="160">
+   <BOUNDS type="Node" left="705" top="2010" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="category">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="160" srcpinname="Input Value" dstnodeid="23" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="161">
+   <BOUNDS type="Node" left="11712" top="7848" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="|0.20112,0.20112,0.20112,1.00000|">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="161" srcpinname="Output" dstnodeid="7" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Value Output" dstnodeid="161" dstpinname="Switch">
    </LINK>
    </PATCH>
