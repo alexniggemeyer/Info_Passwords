@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\grid.v4p" systemname="grid" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\grid.v4p" scrollx="264" scrolly="360">
-   <BOUNDS type="Window" left="0" top="0" width="10776" height="13224">
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\grid.v4p" systemname="grid" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\grid.v4p" scrollx="1695" scrolly="135">
+   <BOUNDS type="Window" left="14100" top="1095" width="10770" height="13215">
    </BOUNDS>
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3870" top="8640" width="100" height="100">
@@ -118,22 +118,6 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="2" dstpinname="ScaleX">
    </LINK>
-   <NODE systemname="catgeroy_color" filename="catgeroy_color.v4p" nodename="catgeroy_color.v4p" componentmode="Hidden" id="12">
-   <BOUNDS type="Node" left="3870" top="750" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3120" top="750" width="4665" height="9765">
-   </BOUNDS>
-   <BOUNDS type="Window" left="19185" top="2535" width="4665" height="9765">
-   </BOUNDS>
-   <PIN pinname="Read" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="category" visible="1">
-   </PIN>
-   <PIN pinname="color" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="12" srcpinname="color" dstnodeid="10" dstpinname="Color Input">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
    <BOUNDS type="Box" left="315" top="2160" width="2055" height="2340">
    </BOUNDS>
@@ -151,9 +135,9 @@
    </PIN>
    <PIN pinname="Show SliceIndex" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="10" values="food,rebellious-rude,password-related,animal,nerdy-pop,sport,fluffy,simple-alphanumeric,cool-macho,name">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="12" srcpinname="category" dstnodeid="13" dstpinname="Input String">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="14">
    <BOUNDS type="Node" left="10530" top="1530" width="100" height="100">
    </BOUNDS>
@@ -351,5 +335,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="Input Value" dstnodeid="0" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="7725" top="1215" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="|def Category_Colors|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Input Value" dstnodeid="10" dstpinname="Color Input">
    </LINK>
    </PATCH>

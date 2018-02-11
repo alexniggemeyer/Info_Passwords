@@ -144,7 +144,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="0" dstpinname="Filename">
    </LINK>
-   <BOUNDS type="Window" left="19185" top="2535" width="4830" height="9285">
+   <BOUNDS type="Window" left="15195" top="2625" width="4665" height="9765">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -189,6 +189,8 @@
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="readout">
+   </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="0" dstpinname="Read">
    <LINKPOINT x="2490" y="1305">
@@ -197,5 +199,15 @@
    <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="13" dstpinname="Set">
    <LINKPOINT x="2460" y="1995">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="S (Color)" nodename="S (Color)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="3315" top="8655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="|def Category_Colors|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="17" dstpinname="Input Value">
    </LINK>
    </PATCH>
