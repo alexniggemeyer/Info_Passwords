@@ -1,0 +1,173 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\selected_category_layer.v4p" systemname="selected_category_layer" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\selected_category_layer.v4p" scrollx="0" scrolly="-360">
+   <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1500" top="4230" width="3030" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="4230" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="String" visible="1" slicecount="183" values="michael,jennifer,jordan,superman,thomas,tigger,robert,batman,george,charlie,andrew,michelle,jessica,daniel,joshua,maggie,william,ashley,amanda,nicole,heather,taylor,austin,matthew,martin,chelsea,patrick,richard,anthony,bailey,jackson,morgan,mickey,justin,samantha,joseph,smokey,dakota,andrea,ferrari,melissa,johnny,james,scooby,charles,mike,brandy,mercedes,brandon,steven,john,chris,boston,chicago,barney,edward,johnson,chester,london,hannah,rachel,marlboro,oliver,mother,victoria,jasper,david,crystal,jack,shannon,murphy,prince,cameron,madison,wilson,carlos,willie,jasmine,angela,lauren,tiffany,dennis,liverpoo,jackie,sophie,danielle,toyota,jason,sierra,winston,debbie,newyork,jeremy,casper,bubba,sandra,cooper,driver,tucker,maxwell,monica,fred,canada,nathan,victor,florida,nicholas,doctor,peaches,buddy,freddy,alexis,xavier,calvin,samson,alex,walter,beavis,peter,bonnie,jonathan,skippy,sydney,scott,gordon,travis,steve,rebecca,bill,parker,arthur,donald,williams,dave,august,sammy,brian,jake,paul,mark,frank,billy,garfield,willow,carter,albert,shelby,america,jessie,house,nissan,marvin,kevin,christin,december,benjamin,king,brooklyn,teresa,sharon,gregory,teens,michigan,stella,cartman,guinness,einstein,kelly,nelson,nirvana,vampire,louise,snowball,mexico,fantasy,ford,gibson,marcus,cassie,natasha,chance,alexande,jester">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="16">
+   </PIN>
+   <PIN pinname="Horizontal Align" slicecount="1" visible="1" values="Center">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Roboto Mono|">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="3150" top="1830" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|Color Category|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Decompose (Transform Vector)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Decompose (Transform Vector)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1965" top="3210" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1965" top="3210" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="TranslateXYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2175" top="3660" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="3330" top="2340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Selected">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="3315" top="2925" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3315" top="2925" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSpread (Color)" nodename="GetSpread (Color)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="3135" top="3690" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Offset" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSpread (String)" nodename="GetSpread (String)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1815" top="2685" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="500" values="pepper,cheese,coffee,banana,butter,muffin,hotdog,apples,cocacola,apple,cherry,biteme,freedom,secret,whatever,badboy,sexsex,butthead,booger,stupid,horny,sucker,password,letmein,test,pass,access,gateway,please,welcome,internet,enter,helpme,pookie,testing,tester,passw0rd,dragon,monkey,bigdog,falcon,phoenix,tigers,chicken,bulldog,spider,rabbit,tiger,panther,turtle,gators,jaguar,tomcat,fish,dolphins,dolphin,beaver,scorpion,doggie,birdie,animal,elephant,wolf,donkey,buffalo,eagle,starwars,computer,merlin,matrix,snoopy,boomer,compaq,ncc1701,wizard,diablo,gandalf,slayer,thx1138,startrek,theman,8675309,rosebud,bond007,voyager,rush2112,ou812,topgun,saturn,online,dexter,trinity,digital,beatles,genesis,college,baseball,football,soccer,hockey,dallas,yankees,golfer,nascar,steelers,cowboys,eagles,tennis,lakers,yamaha,rangers,raiders,fishing,redsox,arsenal,viking,golf,redskins,giants,packers,united,gunner,braves,yankee,blazer,runner,bronco,jordan23,broncos,cricket,racing,redwings,celtic,love,sunshine,silver,orange,ginger,summer,princess,diamond,yellow,iloveyou,purple,cookie,peanut,panties,booboo,blue,angel,golden,iwantu,angels,girls,flower,forever,green,lovers,lucky,happy,gemini,lover,magic,rainbow,scorpio,star,heaven,baby,private,little,kitten,super,white,sweet,dreams,kitty,girl,123456,12345678,1234,qwerty,12345,696969,abc123,111111,2000,1234567,trustno1,6969,123456789,654321,123123,666666,hello,1111,121212,asdfgh,aaaaaa,131313,zxcvbn,xxxxxx,11111111,asdf,zxcvbnm,qazwsx,7777777,112233,5150,222222,xxxxxxxx,777777,88888888,qwertyui,987654,2112,1212,7777,red123,232323,zzzzzz,555555,asdfasdf,2222,4444,heka6w2,69696969,eagle1,11111,123321,999999,qwert,1313,87654321,333333,123abc,xxxx,test123,888888,mustang,shadow,master,harley,hunter,ranger,buster,killer,sexy,thunder,hammer,corvette,sparky,cowboy,camaro,guitar,scooter,porsche,maverick,money,iceman,black,knight,hardcore,player,junior,monster,miller,fender,marine,winter,bigdaddy,midnight,winner,captain,maddog,rocket,mountain,bear,metallic,trouble,success,warrior,member,voodoo,apollo,fire,beer,power,jackass,flyers,legend,viper,bigboy,godzilla,lifehack,phantom,rock,cool,platinum,copper,free,chevy,surfer,airborne,action,adidas,explorer,walker,police,therock,magnum,nothing,speedy,playboy,pumpkin,sniper,hotrod,reddog,michael,jennifer,jordan,superman,thomas,tigger,robert,batman,george,charlie,andrew,michelle,jessica,daniel,joshua,maggie,william,ashley,amanda,nicole,heather,taylor,austin,matthew,martin,chelsea,patrick,richard,anthony,bailey,jackson,morgan,mickey,justin,samantha,joseph,smokey,dakota,andrea,ferrari,melissa,johnny,james,scooby,charles,mike,brandy,mercedes,brandon,steven,john,chris,boston,chicago,barney,edward,johnson,chester,london,hannah,rachel,marlboro,oliver,mother,victoria,jasper,david,crystal,jack,shannon,murphy,prince,cameron,madison,wilson,carlos,willie,jasmine,angela,lauren,tiffany,dennis,liverpoo,jackie,sophie,danielle,toyota,jason,sierra,winston,debbie,newyork,jeremy,casper,bubba,sandra,cooper,driver,tucker,maxwell,monica,fred,canada,nathan,victor,florida,nicholas,doctor,peaches,buddy,freddy,alexis,xavier,calvin,samson,alex,walter,beavis,peter,bonnie,jonathan,skippy,sydney,scott,gordon,travis,steve,rebecca,bill,parker,arthur,donald,williams,dave,august,sammy,brian,jake,paul,mark,frank,billy,garfield,willow,carter,albert,shelby,america,jessie,house,nissan,marvin,kevin,christin,december,benjamin,king,brooklyn,teresa,sharon,gregory,teens,michigan,stella,cartman,guinness,einstein,kelly,nelson,nirvana,vampire,louise,snowball,mexico,fantasy,ford,gibson,marcus,cassie,natasha,chance,alexande,jester">
+   </PIN>
+   <PIN pinname="Offset" visible="1">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="2190" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Selected">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="2175" top="2085" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2175" top="2085" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="0" dstpinname="String">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="0" dstpinname="Color">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="5000" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="5000" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="10" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output 1" dstnodeid="7" dstpinname="Offset">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output 2" dstnodeid="7" dstpinname="Count">
+   </LINK>
+   <NODE id="12" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform In|">
+   </PIN>
+   <BOUNDS type="Box" left="2715" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2715" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Output Node" dstnodeid="2" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Input Value" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="TranslateXYZ" dstnodeid="3" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Input Value" dstnodeid="6" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 1" dstnodeid="6" dstpinname="Offset">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output 2" dstnodeid="6" dstpinname="Count">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <BOUNDS type="Window" left="17895" top="4215" width="6030" height="6000">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.3">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="R (String)" nodename="R (String)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="1830" top="870" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="asdfasdf">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Input Value" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   </PATCH>
