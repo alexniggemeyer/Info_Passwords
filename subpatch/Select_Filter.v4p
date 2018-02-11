@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\Select_Filter.v4p" systemname="Select_Filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\Select_Filter.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\Select_Filter.v4p" systemname="Select_Filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\Select_Filter.v4p" scrollx="0" scrolly="3600">
    <NODE systemname="ToggleButton (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll" nodename="ToggleButton (GUI)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2340" top="5955" width="100" height="100">
    </BOUNDS>
@@ -57,7 +57,7 @@
    </PIN>
    <PIN pinname="Width" slicecount="1" visible="1" values="0.6">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="0" visible="1">
+   <PIN pinname="Input" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Alignment" slicecount="1" values="Centered">
    </PIN>
@@ -69,7 +69,7 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Y" slicecount="1" values="0.75" visible="1">
+   <PIN pinname="Y" slicecount="1" visible="1" values="0.75">
    </PIN>
    <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -228,7 +228,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output 1" dstnodeid="10" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="2055" top="1695" width="9330" height="13290">
+   <BOUNDS type="Window" left="0" top="0" width="13788" height="13224">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>

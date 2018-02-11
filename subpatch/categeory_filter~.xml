@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" systemname="categeory_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" scrollx="645" scrolly="6780">
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\categeory_filter.v4p" systemname="categeory_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" scrollx="36" scrolly="360">
    <NODE systemname="ToggleButton (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll" nodename="ToggleButton (GUI)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="9501" top="12460" width="100" height="100">
    </BOUNDS>
@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="Mouse" visible="1">
    </PIN>
-   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   <PIN pinname="Color" visible="1" slicecount="1" values="|0.50138,0.50138,0.50138,1.00000|">
    </PIN>
    <PIN pinname="Active" visible="1">
    </PIN>
@@ -29,7 +29,7 @@
    </PIN>
    <PIN pinname="Mouse Over" visible="1">
    </PIN>
-   <PIN pinname="Mouse Over Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   <PIN pinname="Mouse Over Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="2">
@@ -40,6 +40,8 @@
    <PIN pinname="Spread Count" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Width" slicecount="2" visible="1" values="0.000755750868055555,0.00154492455418381">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" values="-0.06">
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="3">
@@ -124,7 +126,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="TranslateY">
    </LINK>
-   <BOUNDS type="Window" left="540" top="360" width="14880" height="14895">
+   <BOUNDS type="Window" left="-252" top="0" width="10056" height="13224">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -320,14 +322,6 @@
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="30" dstpinname="Input Value">
    </LINK>
-   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="95">
-   <BOUNDS type="Node" left="3360" top="7305" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1" slicecount="500" values="2,7,7,7,7,7,3,5,5,2,3,7,7,8,9,8,8,9,7,7,9,9,8,7,8,7,8,8,9,9,9,5,9,2,2,8,5,9,9,9,9,6,6,9,7,0,9,2,7,7,9,9,4,6,9,5,5,7,9,7,7,9,6,1,1,4,8,8,9,6,9,8,6,8,9,9,7,4,9,7,5,0,6,9,9,9,9,6,6,3,1,7,8,8,8,9,4,3,6,9,8,9,6,8,3,7,9,3,8,9,8,6,5,6,9,7,8,9,6,5,9,4,4,1,8,9,2,9,5,5,3,8,7,2,9,9,8,8,9,4,0,6,9,3,7,2,9,8,4,4,9,9,8,2,9,9,5,0,8,3,5,8,3,2,9,9,9,8,9,5,4,9,9,3,8,9,5,4,8,9,9,5,1,8,9,9,9,8,6,5,9,4,7,9,1,5,4,7,9,3,7,5,9,7,9,9,7,9,6,9,8,9,6,1,5,9,6,9,9,6,9,9,6,9,9,9,9,4,8,8,9,0,1,9,5,9,8,9,4,9,9,6,6,6,9,0,3,9,9,5,9,9,9,9,9,5,5,9,9,9,9,7,9,6,8,5,9,9,9,2,2,6,9,4,8,3,7,7,3,9,9,6,0,6,6,7,7,9,9,9,9,7,9,4,8,9,8,8,1,3,8,9,0,3,7,6,9,3,6,5,7,9,9,5,7,7,0,9,3,2,4,8,9,8,7,9,9,8,8,2,9,9,4,9,9,4,8,0,6,9,9,9,9,7,8,9,9,3,6,8,8,7,7,9,9,3,3,8,4,5,5,9,5,3,7,9,4,7,6,8,3,7,8,7,9,6,6,8,9,9,8,8,9,8,9,9,8,9,8,9,5,9,9,9,7,8,9,9,9,6,9,9,7,6,6,5,7,9,9,7,9,9,8,7,8,6,5,1,8,9,7,4,8,3,9,8,8,7,9,7,8,8,8,9,9,9,3,6,8,9,4,9,9,5,9,4,5,9,9,5,6,9,8,7,8,3,4,4,7,9,9,9,7,8,3,6,3,9,9,9,9,9,7,8,9,8,9,7,6,1,9,4,9,9,9,5,9,0,9,7,9,8,9,4,8,8,9,4,9,2">
-   </PIN>
-   <PIN pinname="Send String" slicecount="1" values="|sorted categories|">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="10" srcpinname="category" dstnodeid="23" dstpinname="Filter">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="151">
@@ -357,7 +351,7 @@
    <LINK srcnodeid="160" srcpinname="Input Value" dstnodeid="23" dstpinname="Input">
    </LINK>
    <NODE systemname="R (String)" nodename="R (String)" componentmode="Hidden" id="161">
-   <BOUNDS type="Node" left="3150" top="3885" width="100" height="100">
+   <BOUNDS type="Node" left="3555" top="3780" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="password">
    </PIN>
@@ -633,7 +627,7 @@
    <LINK srcnodeid="172" srcpinname="SizeXY" dstnodeid="218" dstpinname="Input">
    </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="219">
-   <BOUNDS type="Node" left="11355" top="7320" width="100" height="100">
+   <BOUNDS type="Node" left="11355" top="7080" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" slicecount="1" values="2">
    </PIN>
@@ -645,7 +639,7 @@
    <LINK srcnodeid="218" srcpinname="Output" dstnodeid="219" dstpinname="Input">
    </LINK>
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="220">
-   <BOUNDS type="Node" left="10935" top="11880" width="100" height="100">
+   <BOUNDS type="Node" left="11091" top="11772" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -693,5 +687,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="242" srcpinname="Input Value" dstnodeid="53" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="243">
+   <BOUNDS type="Node" left="5280" top="5025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="orderd">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="165" srcpinname="Filter Index" dstnodeid="243" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="220" srcpinname="Input Value" dstnodeid="1" dstpinname="Mouse Over Color">
    </LINK>
    </PATCH>
