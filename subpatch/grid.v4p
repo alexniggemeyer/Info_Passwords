@@ -1,6 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+<<<<<<< HEAD
    <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\grid.v4p" systemname="grid" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\grid.v4p" scrollx="1695" scrolly="135">
    <BOUNDS type="Window" left="14100" top="1095" width="10770" height="13215">
+=======
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\grid.v4p" systemname="grid" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\grid.v4p" scrollx="264" scrolly="1080">
+   <BOUNDS type="Window" left="0" top="0" width="12636" height="13224">
+>>>>>>> a4d3e4361a48923d26fb7fdca09b7ec4f86ea3eb
    </BOUNDS>
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="3870" top="8640" width="100" height="100">
@@ -47,7 +52,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" values="-0.55,0.01,0.01,-0.25,-0.39,0.29,-0.39,-0.35,0.19,0.65">
+   <PIN pinname="Y Input Value" slicecount="10" values="-0.51,-0.02,-0.02,-0.27,-0.35,0.21,-0.36,-0.35,0.12,0.63">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="2" dstpinname="TranslateX">
@@ -63,7 +68,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" values="-0.06,0.41,0.21,-0.07,0.14,0.3,0.36,-0.4,-0.25,-0.03">
+   <PIN pinname="Y Input Value" slicecount="10" values="-0.08,0.39,0.15,-0.08,0.14,0.26,0.36,-0.37,-0.26,-0.03">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="2" dstpinname="TranslateY">
@@ -79,7 +84,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" visible="1" values="0.22,0.27,0.27,0.36,0.52,0.28,0.52,0.53,0.48,0.43">
+   <PIN pinname="Y Input Value" slicecount="10" visible="1" values="0.13,0.14,0.13,0.25,0.43,0.23,0.42,0.43,0.38,0.49">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|ScaleX - X|">
    </PIN>
@@ -95,7 +100,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="10" visible="1" values="0.23,0.17,0.22,0.25,0.15,0.39,0.27,0.4,0.69,1.05">
+   <PIN pinname="Y Input Value" slicecount="10" visible="1" values="0.22,0.15,0.24,0.22,0.15,0.4,0.21,0.29,0.51,0.96">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ScaleY">
    </PIN>

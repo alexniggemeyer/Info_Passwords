@@ -1,5 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+<<<<<<< HEAD
    <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\strenght_filter.v4p" systemname="strenght_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\strenght_filter.v4p" scrollx="0" scrolly="1650">
+=======
+   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\strenght_filter.v4p" systemname="strenght_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\strenght_filter.v4p" scrollx="0" scrolly="360">
+>>>>>>> a4d3e4361a48923d26fb7fdca09b7ec4f86ea3eb
    <NODE id="0" systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Enabled" slicecount="1" pintype="Input" visible="1" values="1">
    </PIN>
@@ -49,7 +53,11 @@
    </PIN>
    <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
    </PIN>
+<<<<<<< HEAD
    <PIN pinname="Input" pintype="Input" visible="1" slicecount="1" values="0.15">
+=======
+   <PIN pinname="Input" pintype="Input" visible="1" slicecount="1" values="0.14">
+>>>>>>> a4d3e4361a48923d26fb7fdca09b7ec4f86ea3eb
    </PIN>
    <PIN pinname="Alignment" pintype="Input" visible="1" slicecount="1" values="Centered">
    </PIN>
@@ -79,7 +87,7 @@
    </PIN>
    <PIN pinname="Value Output" visible="1" pintype="Output">
    </PIN>
-   <PIN pinname="Activated Color" slicecount="1" visible="1" pintype="Input" values="|0.00000,1.00000,0.00000,1.00000|">
+   <PIN pinname="Activated Color" slicecount="1" visible="1" pintype="Input" values="|0.09667,0.64411,0.00000,1.00000|">
    </PIN>
    <PIN pinname="SizeXY" slicecount="2" pintype="Input" visible="1" values="0.95,0.95">
    </PIN>
@@ -222,7 +230,21 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Output" dstnodeid="9" dstpinname="TranslateY">
    </LINK>
+<<<<<<< HEAD
    <BOUNDS type="Window" left="7200" top="1710" width="12795" height="13590">
+=======
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="9" dstpinname="ScaleX">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="9" dstpinname="ScaleY">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output Node" dstnodeid="5" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="5" dstpinname="TranslateY">
+   </LINK>
+   <BOUNDS type="Window" left="0" top="0" width="12636" height="13224">
+>>>>>>> a4d3e4361a48923d26fb7fdca09b7ec4f86ea3eb
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -254,6 +276,7 @@
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
+<<<<<<< HEAD
    <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="33">
    <BOUNDS type="Node" left="8070" top="14550" width="100" height="100">
    </BOUNDS>
@@ -264,6 +287,8 @@
    <PIN pinname="Color Input" slicecount="1" values="|0.00000,0.79056,0.01978,1.00000|">
    </PIN>
    </NODE>
+=======
+>>>>>>> a4d3e4361a48923d26fb7fdca09b7ec4f86ea3eb
    <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="37">
    <BOUNDS type="Node" left="9465" top="12255" width="100" height="100">
    </BOUNDS>
@@ -575,6 +600,7 @@
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="orderd">
    </PIN>
+<<<<<<< HEAD
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
@@ -584,18 +610,28 @@
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Index" visible="1">
+=======
+   <PIN pinname="Input 1" slicecount="1" values="|0.26700,0.76000,0.76000,1.00000|" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="|0.26700,0.76000,0.76000,1.00000|">
+>>>>>>> a4d3e4361a48923d26fb7fdca09b7ec4f86ea3eb
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="94" srcpinname="Output 2" dstnodeid="102" dstpinname="Input">
    </LINK>
+<<<<<<< HEAD
    <LINK srcnodeid="101" srcpinname="Input Value" dstnodeid="102" dstpinname="Index">
    </LINK>
    <LINK srcnodeid="102" srcpinname="Output" dstnodeid="97" dstpinname="Input">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="105">
    <BOUNDS type="Node" left="10095" top="11205" width="100" height="100">
+=======
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="74">
+   <BOUNDS type="Node" left="8520" top="5775" width="2220" height="270">
+>>>>>>> a4d3e4361a48923d26fb7fdca09b7ec4f86ea3eb
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="orderd">
    </PIN>
@@ -671,5 +707,57 @@
    <LINK srcnodeid="97" srcpinname="Hits" dstnodeid="111" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="111" srcpinname="Output" dstnodeid="73" dstpinname="Switch">
+   </LINK>
+   <NODE id="33" systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox">
+   <PIN pinname="Color Input" slicecount="1" values="|0.05054,0.42539,0.00000,1.00000|">
+   </PIN>
+   <BOUNDS type="Node" left="8295" top="8820" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8295" top="8820" width="2250" height="480">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Color Output" dstnodeid="73" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="RGB (Color Join)" nodename="RGB (Color Join)" componentmode="Hidden" id="77">
+   <BOUNDS type="Node" left="4440" top="3744" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Red" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Green" slicecount="1" values="0.24">
+   </PIN>
+   <PIN pinname="Blue" slicecount="1" values="0.24">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="77" srcpinname="Output" dstnodeid="2" dstpinname="Activated Color">
+   </LINK>
+   <NODE id="78" systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Input 2" slicecount="1" pintype="Input" visible="1" values="|0.16590,0.16590,0.16590,1.00000|">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="3" pintype="Input" values="1,1,1">
+   </PIN>
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <BOUNDS type="Node" left="4764" top="6168" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="" pintype="Input" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Input 1" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Value Output" dstnodeid="78" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Output" dstnodeid="3" dstpinname="Color">
    </LINK>
    </PATCH>
