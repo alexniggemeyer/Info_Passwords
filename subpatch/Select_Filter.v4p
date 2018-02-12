@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\Select_Filter.v4p" systemname="Select_Filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\Select_Filter.v4p" scrollx="0" scrolly="3600">
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\Select_Filter.v4p" systemname="Select_Filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\Select_Filter.v4p" scrollx="1545" scrolly="1350">
    <NODE systemname="ToggleButton (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll" nodename="ToggleButton (GUI)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2340" top="5955" width="100" height="100">
    </BOUNDS>
@@ -28,6 +28,10 @@
    <PIN pinname="Set Value" slicecount="2" visible="1" values="0,0">
    </PIN>
    <PIN pinname="Hit" visible="1">
+   </PIN>
+   <PIN pinname="Value Input" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Autosave" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="1">
@@ -192,14 +196,6 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform In">
    </LINK>
-   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="0" dstpinname="Set Value">
-   <LINKPOINT x="6435" y="10275">
-   </LINKPOINT>
-   <LINKPOINT x="6585" y="5745">
-   </LINKPOINT>
-   <LINKPOINT x="4770" y="4560">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="16" srcpinname="Device" dstnodeid="0" dstpinname="Mouse">
    </LINK>
    <NODE id="18" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
@@ -228,7 +224,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output 1" dstnodeid="10" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="0" top="0" width="13788" height="13224">
+   <BOUNDS type="Window" left="-19050" top="1770" width="6555" height="13290">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -468,6 +464,14 @@
    <LINKPOINT x="7185" y="3585">
    </LINKPOINT>
    <LINKPOINT x="6870" y="4620">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="0" dstpinname="Set Value">
+   <LINKPOINT x="6450" y="9615">
+   </LINKPOINT>
+   <LINKPOINT x="5490" y="4395">
+   </LINKPOINT>
+   <LINKPOINT x="2565" y="4845">
    </LINKPOINT>
    </LINK>
    </PATCH>

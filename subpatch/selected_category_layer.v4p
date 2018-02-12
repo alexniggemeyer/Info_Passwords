@@ -13,13 +13,15 @@
    </PIN>
    <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
-   <PIN pinname="Size" slicecount="1" values="16">
+   <PIN pinname="Size" slicecount="1" values="25">
    </PIN>
    <PIN pinname="Horizontal Align" slicecount="1" visible="1" values="Center">
    </PIN>
    <PIN pinname="Font" slicecount="1" values="|Roboto Mono|">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Normalize" slicecount="1" values="Both">
    </PIN>
    </NODE>
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="1">
@@ -154,7 +156,7 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="5" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="17895" top="4215" width="6030" height="6000">
+   <BOUNDS type="Window" left="-14220" top="2925" width="6030" height="6000">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>

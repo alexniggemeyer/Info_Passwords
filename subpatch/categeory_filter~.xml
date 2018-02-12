@@ -1,37 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Franziska\Desktop\Info_Passwords\subpatch\categeory_filter.v4p" systemname="categeory_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" scrollx="36" scrolly="360">
-   <NODE systemname="ToggleButton (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll" nodename="ToggleButton (GUI)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="9501" top="12460" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="9501" top="12460" width="3000" height="3000">
-   </BOUNDS>
-   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Internal Value" slicecount="10" values="0,0,0,0,0,0,0,0,0,0">
-   </PIN>
-   <PIN pinname="Hit" visible="1">
-   </PIN>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   <PIN pinname="Mouse" visible="1">
-   </PIN>
-   <PIN pinname="Color" visible="1" slicecount="1" values="|0.50138,0.50138,0.50138,1.00000|">
-   </PIN>
-   <PIN pinname="Active" visible="1">
-   </PIN>
-   <PIN pinname="Value Output" visible="1">
-   </PIN>
-   <PIN pinname="Activated Color" slicecount="10" visible="1" values="|0.07059,0.69804,0.05882,1.00000|,|0.39608,1.00000,0.38039,1.00000|,|1.00000,0.82745,0.09804,1.00000|,|0.96863,0.57647,0.11765,1.00000|,|1.00000,0.59216,0.80784,1.00000|,|1.00000,0.00000,0.87451,1.00000|,|0.61569,0.47451,0.72549,1.00000|,|0.40000,0.17647,0.56863,1.00000|,|0.67843,1.00000,0.98431,1.00000|,|0.00000,0.87451,0.83137,1.00000|">
-   </PIN>
-   <PIN pinname="SizeXY" slicecount="2" values="0.95,0.95">
-   </PIN>
-   <PIN pinname="Set Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Mouse Over" visible="1">
-   </PIN>
-   <PIN pinname="Mouse Over Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|" visible="1">
-   </PIN>
-   </NODE>
+   <PATCH nodename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" systemname="categeory_filter" filename="C:\Users\Alex\Desktop\MasterProjekt1\03_Interactive\Info_Passwords\subpatch\categeory_filter.v4p" scrollx="1110" scrolly="4755">
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="9891" top="8995" width="100" height="100">
    </BOUNDS>
@@ -65,7 +33,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9306" top="17050" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Transform" visible="1">
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -85,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1005" top="375" width="4665" height="9765">
    </BOUNDS>
-   <BOUNDS type="Window" left="16950" top="1860" width="6555" height="11925">
+   <BOUNDS type="Window" left="-9870" top="2115" width="6540" height="11910">
    </BOUNDS>
    <PIN pinname="Read" visible="1" slicecount="1" values="0">
    </PIN>
@@ -114,19 +82,9 @@
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE id="19" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
-   </PIN>
-   <BOUNDS type="Box" left="10431" top="10925" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="10431" top="10925" width="750" height="240">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="1" dstpinname="Mouse">
-   </LINK>
    <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="TranslateY">
    </LINK>
-   <BOUNDS type="Window" left="-252" top="0" width="10056" height="13224">
+   <BOUNDS type="Window" left="-27525" top="1260" width="14865" height="14895">
    </BOUNDS>
    <PACK Name="dx11" Version="1.0.3">
    </PACK>
@@ -187,12 +145,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="32" srcpinname="Down Edge" dstnodeid="1" dstpinname="Set Value">
-   <LINKPOINT x="16790" y="14155">
-   </LINKPOINT>
-   <LINKPOINT x="13495" y="9545">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Occurrence (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\Occurrence.dll" nodename="Occurrence (Value)" componentmode="Hidden" id="33">
    <BOUNDS type="Node" left="1425" top="4935" width="100" height="100">
@@ -279,8 +231,6 @@
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="39" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="41" srcpinname="Former Slice" dstnodeid="39" dstpinname="Index">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Value Output" dstnodeid="41" dstpinname="Select">
    </LINK>
    <NODE systemname="Zip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (Value)" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="6780" top="17280" width="100" height="100">
@@ -562,8 +512,6 @@
    </NODE>
    <LINK srcnodeid="180" srcpinname="Output" dstnodeid="207" dstpinname="XY">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform In">
-   </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="214">
    <BOUNDS type="Node" left="10125" top="8460" width="100" height="100">
    </BOUNDS>
@@ -639,32 +587,16 @@
    <LINK srcnodeid="218" srcpinname="Output" dstnodeid="219" dstpinname="Input">
    </LINK>
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="220">
-   <BOUNDS type="Node" left="11091" top="11772" width="100" height="100">
+   <BOUNDS type="Node" left="11181" top="13497" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
    <PIN pinname="Receive String" slicecount="1" values="|def Category_Colors|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Mouse Over" dstnodeid="206" dstpinname="Switch">
-   <LINKPOINT x="12778" y="13194">
-   </LINKPOINT>
-   <LINKPOINT x="16211" y="9917">
-   </LINKPOINT>
-   <LINKPOINT x="15579" y="7166">
-   </LINKPOINT>
-   <LINKPOINT x="12681" y="5224">
-   </LINKPOINT>
-   <LINKPOINT x="12769" y="3523">
-   </LINKPOINT>
-   <LINKPOINT x="11432" y="3531">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="192" srcpinname="Output Node" dstnodeid="4" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="21" srcpinname="Output Node" dstnodeid="3" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="4" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="207" srcpinname="X" dstnodeid="3" dstpinname="ScaleX">
    </LINK>
@@ -673,10 +605,6 @@
    <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="17" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="219" srcpinname="Output" dstnodeid="180" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Color" dstnodeid="4" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="220" srcpinname="Input Value" dstnodeid="1" dstpinname="Activated Color">
    </LINK>
    <NODE systemname="R (Color)" nodename="R (Color)" componentmode="Hidden" id="242">
    <BOUNDS type="Node" left="795" top="3690" width="100" height="100">
@@ -698,6 +626,128 @@
    </NODE>
    <LINK srcnodeid="165" srcpinname="Filter Index" dstnodeid="243" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="220" srcpinname="Input Value" dstnodeid="1" dstpinname="Mouse Over Color">
+   <NODE systemname="HitTest (2d Quad)" filename="%VVVV%\addonpack\lib\nodes\plugins\HitTest2dNodes.dll" nodename="HitTest (2d Quad)" componentmode="Hidden" id="244">
+   <BOUNDS type="Node" left="9915" top="11490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="PointsXY" visible="1">
+   </PIN>
+   <PIN pinname="Object Hit" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="244" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="245">
+   <BOUNDS type="Node" left="13095" top="8145" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="13095" top="8145" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   <PIN pinname="Left Button" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="245" srcpinname="PositionXY" dstnodeid="244" dstpinname="PointsXY">
+   </LINK>
+   <LINK srcnodeid="244" srcpinname="Object Hit" dstnodeid="206" dstpinname="Switch">
+   <LINKPOINT x="10556" y="12816">
+   </LINKPOINT>
+   <LINKPOINT x="11826" y="12958">
+   </LINKPOINT>
+   <LINKPOINT x="14477" y="7969">
+   </LINKPOINT>
+   <LINKPOINT x="14083" y="4811">
+   </LINKPOINT>
+   <LINKPOINT x="13299" y="2687">
+   </LINKPOINT>
+   <LINKPOINT x="11374" y="2754">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="246">
+   <BOUNDS type="Node" left="12720" top="14310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="245" srcpinname="Left Button" dstnodeid="246" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="244" srcpinname="Object Hit" dstnodeid="246" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="247">
+   <BOUNDS type="Node" left="12720" top="15105" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Down Edge" dstnodeid="247" dstpinname="Reset">
+   <LINKPOINT x="13665" y="17505">
+   </LINKPOINT>
+   <LINKPOINT x="14280" y="15120">
+   </LINKPOINT>
+   <LINKPOINT x="13665" y="14400">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="246" srcpinname="Output" dstnodeid="247" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="247" srcpinname="Output" dstnodeid="41" dstpinname="Select">
+   </LINK>
+   <NODE systemname="InputMorph (Color)" nodename="InputMorph (Color)" componentmode="Hidden" id="248">
+   <BOUNDS type="Node" left="10140" top="15750" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="247" srcpinname="Output" dstnodeid="248" dstpinname="Switch">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="249">
+   <BOUNDS type="Box" left="10980" top="12150" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10980" top="12150" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.50138,0.50138,0.50138,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="220" srcpinname="Input Value" dstnodeid="248" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="248" srcpinname="Output" dstnodeid="4" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="4" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="InputMorph (Color)" nodename="InputMorph (Color)" componentmode="Hidden" id="250">
+   <BOUNDS type="Node" left="10530" top="14250" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="250" srcpinname="Output" dstnodeid="248" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="249" srcpinname="Color Output" dstnodeid="250" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="220" srcpinname="Input Value" dstnodeid="250" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="244" srcpinname="Object Hit" dstnodeid="250" dstpinname="Switch">
    </LINK>
    </PATCH>
